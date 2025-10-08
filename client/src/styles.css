@@ -1,0 +1,68 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #0e1117;
+  color: #e1e4e8;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.home, .room-container, .workspace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+input, button {
+  margin: 10px;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  cursor: pointer;
+  background-color: #1f6feb;
+  color: white;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background-color: #388bfd;
+}
+
+.chatbox {
+  width: 30%;
+  background: #161b22;
+  border-left: 1px solid #30363d;
+  padding: 15px;
+}
+
+.chatbox .messages {
+  height: 60vh;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #161b22;
+  border-bottom: 1px solid #30363d;
+}
+
+.nav-links a {
+  color: #e1e4e8;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  color: #58a6ff;
+}

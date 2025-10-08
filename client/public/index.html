@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>CodeSphere | Real-Time Code Collaboration Platform</title>
+    <meta
+      name="description"
+      content="CodeSphere is a scalable real-time code collaboration platform where developers can edit, chat, and build together — powered by WebSockets, React, and Node.js."
+    />
+    <meta name="theme-color" content="#0e1117" />
+    <meta name="author" content="Your Name" />
+
+    <!-- Open Graph / SEO -->
+    <meta property="og:title" content="CodeSphere — Real-Time Code Collaboration" />
+    <meta
+      property="og:description"
+      content="Collaborate, code, and build together in real time with CodeSphere — a scalable WebSocket-based coding platform."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="/codesphere-preview.png" />
+    <meta property="og:url" content="https://yourdomain.com/" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Manifest (optional if you later deploy as PWA) -->
+    <link rel="manifest" href="/manifest.json" />
+
+    <style>
+      /* Simple preloader splash until React mounts */
+      body {
+        background-color: #0e1117;
+        color: #e1e4e8;
+        font-family: 'Inter', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+      #preload {
+        text-align: center;
+        animation: fadein 1s ease-in-out;
+      }
+
+      @keyframes fadein {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      #preload h1 {
+        color: #58a6ff;
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+      }
+
+      #preload p {
+        color: #8b949e;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="root">
+      <!-- Preload Screen Before React Mounts -->
+      <div id="preload">
+        <h1> CodeSphere</h1>
+        <p>Loading your collaborative workspace...</p>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
